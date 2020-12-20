@@ -5,7 +5,7 @@ import layers from './theme/layers'
 
 export default {
   fonts,
-  colors: colors.dark,
+  colors: colors.light,
   spacings,
   layers
 }
