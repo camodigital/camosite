@@ -32,6 +32,10 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .sb-show-main.sb-main-padded{
+    padding: 0 !important;
+  }
+
   ${({ theme }) => css`
     html {
       font-size: 62.5%;

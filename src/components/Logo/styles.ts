@@ -25,7 +25,7 @@ export const Link = styled.a<LogoProps>`
   ${({ theme, color }) => css`
     display: inline-block;
 
-    color: ${theme.colors[color]};
+    color: ${theme.colors[color!]};
     text-decoration: none;
 
     transition: 0.5s;
