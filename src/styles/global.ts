@@ -43,6 +43,10 @@ const GlobalStyles = createGlobalStyle`
 
     body {
       font-family: ${theme.fonts.base};
+      font-size: 1.3rem;
+      line-height: 2.6rem;
+
+      color: ${theme.colors.text};
     }
   `}
 `

@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
       border-radius: 0.5rem;
 
       text-transform: capitalize;
+      text-decoration: none;
       color: ${theme.colors.primary};
 
       cursor: pointer;
@@ -18,8 +19,6 @@ export const Wrapper = styled.div`
       transition: 0.5s;
 
       &:hover {
-        padding: 1rem 4rem;
-
         border: 1px solid ${theme.colors.secondary};
 
         color: ${theme.colors.secondary};
