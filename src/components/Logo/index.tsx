@@ -1,4 +1,5 @@
 import * as S from './styles'
+import Link from 'next/link'
 
 export type LogoProps = {
   color?: 'primary' | 'secondary'
@@ -6,14 +7,16 @@ export type LogoProps = {
 
 const Logo = ({ color = 'primary' }: LogoProps) => (
   <S.Wrapper>
-    <S.Link
-      href="index.html"
-      color={color}
-      role="title"
-      aria-label="Agência de Mídia Digital Camo"
-    >
-      <h1>CAMO</h1>
-    </S.Link>
+    <Link href="/qrc-web">
+      <S.Link
+        href="/"
+        color={color}
+        role="title"
+        aria-label="Agência de Mídia Digital Camo"
+      >
+        <h1>CAMO</h1>
+      </S.Link>
+    </Link>
   </S.Wrapper>
 )
 
