@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.h2`
   ${({ theme }) => css`
@@ -17,5 +18,10 @@ export const Wrapper = styled.h2`
       -webkit-text-stroke: 0;
       -webkit-text-fill-color: ${theme.colors.textFeatured};
     }
+
+    ${media.greaterThan('large')`
+      font-size: 4rem;
+      line-height: 5rem;
+    `}
   `}
 `

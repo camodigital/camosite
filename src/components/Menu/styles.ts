@@ -97,6 +97,8 @@ export const NavBarNav = styled.nav<NavBarNavProps>`
     width: 100%;
     height: 100vh;
 
+    z-index: ${theme.layers.menu};
+
     position: absolute;
     top: 0;
     right: 0;
@@ -133,6 +135,10 @@ export const NavBarLinks = styled.ul`
     text-transform: uppercase;
 
     a {
+      margin-bottom: 1rem;
+
+      display: inline-block;
+
       text-decoration: none;
       color: ${theme.colors.primary};
 
@@ -164,6 +170,7 @@ export const Nav = styled.ul`
     list-style: none;
 
     li {
+      margin-bottom: 1rem;
       padding-right: ${theme.spacings.medium};
 
       position: relative;
@@ -173,13 +180,13 @@ export const Nav = styled.ul`
       transition: 0.5s;
 
       &:hover {
-        transform: scale(1.5);
+        /* transform: scale(1.5); */
       }
 
       a {
         display: inline-block;
 
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: ${theme.colors.text};
         text-decoration: none;
 
@@ -188,14 +195,14 @@ export const Nav = styled.ul`
         &::after {
           content: '';
 
-          width: 1rem;
-          height: 1rem;
+          width: 0.8rem;
+          height: 0.8rem;
 
           position: absolute;
           top: 0;
           right: 0;
 
-          transform: translateY(0.3rem);
+          transform: translateY(0.8rem);
 
           border-radius: 50%;
 
@@ -208,15 +215,11 @@ export const Nav = styled.ul`
           color: ${theme.colors.primary};
 
           &::after {
-            transform: translateX(-1.25rem);
+            /* transform: translateX(-1.25rem); */
 
             background-color: ${theme.colors.primary};
           }
         }
-      }
-
-      &:nth-child(2) {
-        margin: ${theme.spacings.small} 0;
       }
     }
   `}

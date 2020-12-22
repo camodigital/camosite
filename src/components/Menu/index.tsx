@@ -1,5 +1,8 @@
 import { useState } from 'react'
+import Link from 'next/link'
+
 import * as S from './styles'
+
 import Logo from 'components/Logo'
 import MediaMatch from 'components/MediaMatch'
 
@@ -17,13 +20,29 @@ const Menu = () => {
         <S.WrapperMenu>
           <S.Nav>
             <li>
-              <a href="#">Sobre</a>
+              <Link href="/qrc-web">
+                <a>Web</a>
+              </Link>
             </li>
             <li>
-              <a href="#">Projetos</a>
+              <Link href="/qrc-app">
+                <a href="#">APP</a>
+              </Link>
             </li>
             <li>
-              <a href="#">Contato</a>
+              <Link href="/qrc-ar">
+                <a href="#">AR</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/qrc-motion">
+                <a href="#">Motion</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/qrc-mkt">
+                <a href="#">MKT</a>
+              </Link>
             </li>
           </S.Nav>
         </S.WrapperMenu>
@@ -53,13 +72,29 @@ const Menu = () => {
 
               <S.NavBarLinks>
                 <li>
-                  <a href="#">Sobre</a>
+                  <Link href="/qrc-web">
+                    <a>Web</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Projetos</a>
+                  <Link href="/qrc-app">
+                    <a href="#">APP</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Contato</a>
+                  <Link href="/qrc-ar">
+                    <a href="#">AR</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/qrc-motion">
+                    <a href="#">Motion</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/qrc-mkt">
+                    <a href="#">MKT</a>
+                  </Link>
                 </li>
               </S.NavBarLinks>
             </S.NavBarNav>
