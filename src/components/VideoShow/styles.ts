@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -32,16 +33,24 @@ export const Wrapper = styled.div`
     }
 
     .title {
-      width: 70%;
+      width: 100%;
       margin-bottom: 1.5rem;
 
       font-family: ${theme.fonts.featured};
       text-transform: uppercase;
       font-size: 2rem;
+
+      ${media.greaterThan('large')`
+        width: 70%;
+      `}
     }
 
     .container {
-      width: 70%;
+      width: 100%;
+
+      ${media.greaterThan('large')`
+        width: 70%;
+      `}
 
       .video {
         overflow: hidden;
